@@ -25,11 +25,15 @@ st.title("Bildwechsel-Webanwendung")
 set_random_background()
 
 # Buttons für den Bildwechsel
-button_cols = st.columns(5)  # Verwenden Sie st.columns statt st.beta_columns
+button_cols = st.columns(5)
 
 for i in range(len(images)):
-    if i < len(button_cols) and button_cols[i].button(f"Button {i+1}"):
-        st.image(images[i], use_column_width=True)
+    try:
+        if button_cols[i].button(f"Button {i+1}"):
+            st.image(images[i], use_column_width=True)
+    except IndexError as e:
+        st.error(f"Fehler beim Verarbeiten von Button {i+1}: {e}")
+
 
 
 # Reset-Knopf
