@@ -15,6 +15,9 @@ def set_random_background():
 # Liste der Bilder
 images = ["Boo!.png", "brokenheart.png", "GeschenkOffen.png", "Pilz.png", "SkelettBlob.png"]
 
+# Zufällige Reihenfolge der Bilder
+random.shuffle(images)
+
 # Streamlit-Anwendung
 st.title("Bildwechsel-Webanwendung")
 
