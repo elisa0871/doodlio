@@ -13,7 +13,7 @@ def set_random_background():
     )
 
 # Liste der Bilder
-images = ["Boo!.png", "brokenheart.png", "GeschenkOffen.png", "Pilz.png", "SkelettBlob.png"]
+images = ["GeschenkZu.png", "Boo!.png", "brokenheart.png", "GeschenkOffen.png", "Pilz.png", "SkelettBlob.png"]
 
 # Zufällige Reihenfolge der Bilder
 random.shuffle(images)
@@ -25,7 +25,7 @@ st.title("Bildwechsel-Webanwendung")
 set_random_background()
 
 # Buttons für den Bildwechsel
-button_cols = st.columns(4)
+button_cols = st.columns(5)
 for i in range(len(images)):
     if button_cols[i].button(f"Button {i+1}"):
         st.image(images[i], use_column_width=True)
