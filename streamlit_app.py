@@ -2,7 +2,7 @@ import streamlit as st
 import random
 
 # Liste der Hintergrundbilder
-background_images = ["background1.jpg", "background2.jpg", "background3.jpg"]
+background_images = ["1H2P1.png", "1H2P2.png", "1H3P1.png", "1H3P2.png", "3P1H.png", "1H1P1.png", "1H1P2.png"]
 
 # Funktion zum Anzeigen eines zufälligen Hintergrundbilds
 def set_random_background():
@@ -13,7 +13,7 @@ def set_random_background():
     )
 
 # Liste der Bilder
-images = ["image_a.jpg", "image_b.jpg", "image_c.jpg", "image_d.jpg", "image_e.jpg"]
+images = ["Boo!.png", "brokenheart.png", "GeschenkOffen.png", "Pilz.png", "SkelettBlob.png"]
 
 # Streamlit-Anwendung
 st.title("Bildwechsel-Webanwendung")
